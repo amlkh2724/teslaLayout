@@ -72,11 +72,14 @@ header nav.center {
 
 .container div {
     font-size: 1.5cm;
+    margin: 15px;
 }
 
 .container,
 .demodrive {
+
     font-size: 20px;
+    
 }
 
 p {
@@ -89,9 +92,71 @@ p {
     width: 100px;
     background-color: red;
 }
+.containerr{
+    height: 1100px;
+   background-color: red;
+}
+.containerr ,.photoo{
+background:url(../img/model-3-hero-a-desktop.jpg)no-repeat center center/cover;
 
-/* section, div{
-    height: 400px;
-    width: 200px;
-    background-color: red;
+
+}
+.containerr ,img{
+    height: 100vh;
+    width: 70%;
+
+ } 
+ .container ,.text,.p{
+    margin-left: 300px;
+    color: black;
+    float: right;
+    line-height: 1.4rem;
+    /* font-size: small; */
+    /* padding-left: 30px; */
+}  
+.container ,.subject{
+    font-weight:550;
+    font-size:medium;
+}
+.container ,.boldsize{
+    font-weight: bold;
+    font-size: large;
+    margin: 8px 0;
+}
+
+ .buttons{
+    position: absolute;
+    display: flex;
+    right: 0;
+    margin-top: 550px;
+    color: black;
+    float: right;
+    /* margin-left: 85vw;
+    margin-top: 80vh; */
+} 
+.buttons,button{
+    width: 250px;
+    height: 30px;
+    background-color: #FFFFFF;
+}
+.buttons,.leranmore{
+}
+/* .buttons,.logoo{
+    height: 12px;
+    width: 100px;
+    z-index: 1;
+    color: inherit
 } */
+/* a{
+    color: #FFFFFF;
+} */
+footer{
+    height: 620px;
+    color: black;
+    /* background-color: rebeccapurple; */
+}
+footer,.photo{
+    background: url(../img/Model-3-Performance-Hero-Desktop-LHD\ \(1\).jpg)no-repeat center center/cover;
+    /* height: 70%; */
+    height: 400px;
+}
