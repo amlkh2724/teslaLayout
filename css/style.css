@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=M+PLUS+1:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 0.8rem;
+    color: #FFFFFF
+}
+
+header {
+    padding: 12px 60px;
+    display: grid;
+    position: relative;
+    /* z-index: 2; */
+    grid-template-columns: auto 1fr auto;
+    height: 100vh;
+    width: 100vw;
+
+
+}
+
+a.logo {
+    height: 12px;
+    width: 100px;
+    z-index: 1;
+    color: inherit
+}
+
+header nav a {
+    text-decoration: none;
+    /* color: #FFFFFF */
+
+    padding: 5px 10px
+}
+
+header nav.center {
+    text-align: center;
+    z-index: 1;
+}
+
+.center a {
+    color: #FFFFFF;
+}
+
+.right,
+.right,
+.desktop a {
+    color: #FFFFFF;
+    z-index: 1;
+}
+
+.content {
+    position: absolute;
+    /* display: inline-block; */
+    background: url(../img/Model-3-Main-Hero-Desktop-LHD.jpg)no-repeat center center/cover;
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    position: absolute;
+    left: 45vw;
+    top: 19vh
+        /* z-index: 2; */
+}
+
+.container div {
+    font-size: 1.5cm;
+}
+
+.container,
+.demodrive {
+    font-size: 20px;
+}
+
+p {
+    position: absolute;
+}
+
+.sec,
+.sec section {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}
+
+/* section, div{
+    height: 400px;
+    width: 200px;
+    background-color: red;
+} */
