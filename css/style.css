@@ -12,6 +12,30 @@ body {
     color: #FFFFFF
 }
 
+@keyframes speedometer {
+    0% {
+        transform: rotate(-90deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes lines {
+    from {
+        height: 25vh;
+    }
+
+    to {
+        height: 22vh;
+    }
+}
+
 
 /* header */
 header {
@@ -86,22 +110,9 @@ header {
     outline-offset: 2px;
     scroll-behavior: smooth;
     text-align: center;
-    /* text-size-adjust: 100%; */
-    /* transform: matrix(34); */
-    /* transform: matrix(1.21323e-17,1,-1,6.12323e-17,0,0) */
-    /* height: 12px; */
-    /* fill: white; */
-    /* font-size: 14px;
-    font-weight: 400;
-    inset-inline-start: 14px;
-    left: 14px;
-    line-height: 20px;
-    outline-offset: 2px;
-    scroll-behavior: smooth;
-    text-align: center;
-    text-size-adjust: 100%;
-    transform: matrix(6.21323e-17,1,-1,6.12323e-17,0,0); */
-
+    animation-name: speedometer;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 
 /* to the mph text */
@@ -128,7 +139,6 @@ header {
 /* the left scrool in my website */
 .scrool {
     position: fixed;
-    opacity: 50px;
     left: 8px;
     top: 34vh;
     list-style: none;
@@ -140,7 +150,20 @@ header {
     cursor: pointer;
     color: rgba(238, 238, 238, 0.386);
     font-weight: 100;
+}
 
+/* to visable the word */
+.scrool .model3 {
+    color: transparent;
+
+}
+
+.scrool .safety {
+    color: transparent;
+}
+
+.scrool .PERFORATION {
+    color: transparent;
 }
 
 /* the left scrool in my website */
@@ -149,7 +172,10 @@ header {
     font-weight: bold;
 }
 
-.scrool li.current:hover {}
+.scrool li a:hover {
+    font-size: 14px;
+    color: #FFFFFF;
+}
 
 /* logo tesla */
 a.logo {
@@ -237,7 +263,7 @@ h3 {
     top: 12px;
 }
 
-container
+
 
 /* the button design*/
 .but,
@@ -323,6 +349,72 @@ p {
 .containerr,
 .photoo {
     background: url(../img/model-3-hero-a-desktop.jpg)no-repeat center center/cover;
+}
+
+.photoo {
+    position: relative;
+}
+
+
+.info .left {
+    position: absolute;
+    /* top: 100px; */
+    left: 195px;
+    top: 820px;
+    height: 140px;
+    width: 2px;
+    background: black;
+    animation-name: lines;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+
+.info .right {
+    position: absolute;
+    color: black;
+    /* top: 100px; */
+    left: 195px;
+    bottom: 145px;
+    /* top: 600px; */
+    height: 80px;
+    width: 2px;
+    background: black;
+}
+
+.info .center {
+    position: absolute;
+    /* font-size: 12px; */
+
+    top: 280px;
+    height: 140px;
+    width: 2px;
+    background: black;
+}
+
+.info .verylow {
+    font-size: 12px;
+    width: 120px;
+    margin: 11px;
+    margin-top: 130px;
+    color: black;
+}
+
+.info .rigid {
+    font-size: 12px;
+
+    margin: 11px;
+    width: 120px;
+    margin-top: 70px;
+    color: black
+}
+
+.info .impact {
+    margin: 11px;
+    width: 120px;
+    margin-top: 140px;
+
+    color: black
 }
 
 /* the second page the photo */

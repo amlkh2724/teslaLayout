@@ -6,7 +6,7 @@ function updateTimer() {
 
 var timerInterval = setInterval(updateTimer, 200);
 
-setTimeout(function() {
+setTimeout(function () {
   clearInterval(timerInterval);
 }, 600);
 
