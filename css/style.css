@@ -1,15 +1,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
+/* reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+body {
+    color: #FFFFFF
+}
+
+
+/* header */
+header {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 11px;
+    padding: 12px 60px;
+    display: grid;
+    position: relative;
+    grid-template-columns: auto 1fr auto;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* img in the header */
+.content {
+    color: #FFFFFF;
+    position: absolute;
+    background: url(../img/Model-3-Main-Hero-Desktop-LHD.jpg)no-repeat center center/cover;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+/* timer runner to 3 sec */
 #timer {
     padding: 0px 40px;
 }
 
+/* build the speed */
 .tcl-badge-speedometer__outer-circle {
     position: relative;
     color: white;
@@ -20,6 +53,7 @@
     height: 16px;
 }
 
+/* build the speed */
 .tcl-badge-speedometer__inner-circle {
     position: absolute;
     color: rgb(238, 238, 238);
@@ -38,6 +72,7 @@
     /* margin-right: 90px; */
 }
 
+/* build the speed */
 .tcl-badge-speedometer__needle {
     position: absolute;
     color: rgb(238, 238, 238);
@@ -68,6 +103,7 @@
 
 }
 
+/* to the mph text */
 .mphh {
     top: 30px;
     bottom: 0.1px;
@@ -76,33 +112,42 @@
     margin-right: 30px;
 }
 
-body {
-    color: #FFFFFF
+/* the models design in the website */
+
+.right,
+.right,
+.desktop a {
+    color: #FFFFFF;
+    z-index: 1;
 }
 
-
-
-header {
-    scroll-behavior: smooth;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 500;
-    font-size: 11px;
-    padding: 12px 60px;
-    display: grid;
-    position: relative;
-    grid-template-columns: auto 1fr auto;
-    height: 100vh;
-    width: 100vw;
-}
-
+/* the left scrool in my website */
 .scrool {
-    position: absolute;
-    scrollbar-color: red;
-    height: 200px;
-    left: 20px;
-    top: 50vh;
+    position: fixed;
+    opacity: 50px;
+    left: 8px;
+    top: 34vh;
+    list-style: none;
+    font-size: 18px;
+    scroll-behavior: smooth;
+    text-align: left;
+    line-height: 23px;
+    max-inline-size: 792.75px;
+    cursor: pointer;
+    color: rgba(238, 238, 238, 0.386);
+    font-weight: 100;
+
 }
 
+/* the left scrool in my website */
+.scrool li.current {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.scrool li.current:hover {}
+
+/* logo tesla */
 a.logo {
     height: 12px;
     width: 100px;
@@ -110,63 +155,31 @@ a.logo {
     color: inherit
 }
 
-.imgmovv {
-    position: absolute;
-    left: 40px;
-    bottom: 2px;
 
-}
-
+/* for the lest in the nav in the header */
 header nav a {
-
     text-decoration: none;
     padding: 5px 10px
 }
+
+/* for the lest in the nav in the header */
 
 header nav.center {
     text-align: center;
     z-index: 1;
 }
 
+/* mpg and the timer and the button  */
 .containerfour {
     position: absolute;
     color: #FFFFFF;
-    /* font-size: large; */
     margin-top: 80vh;
     left: 20vw;
     display: flex;
     width: 45%;
-
-
-    /* justify-content: space-around; */
-
 }
 
-h3 {
-    font-size: 1.7rem;
-}
-
-.but {
-    position: absolute;
-    left: 45vw;
-    top: 12px;
-}
-
-.but,
-.butnn {
-    color: #FFFFFF;
-    width: 180px;
-    border: none;
-    background: none;
-    border-radius: 4px;
-    border: 1px #FFFFFF solid
-}
-
-/* .but,button,.but{
-        background-color: #FFFFFF;
-        color: black;
-    } */
-
+/* the margin in the box for each one */
 .box1 {
     flex: 1;
 }
@@ -179,10 +192,43 @@ h3 {
     flex: 1;
 }
 
-.center a {
+
+/* mpg and the timer and the button for the footer */
+
+.containerfourr {
     color: #FFFFFF;
+    position: absolute;
+    /* font-size: large; */
+    margin-top: 40vh;
+    left: 20vw;
+    display: flex;
+    width: 45%;
 }
 
+/* every h3 font size */
+h3 {
+    font-size: 1.7rem;
+}
+
+/* the button design*/
+.but {
+    position: absolute;
+    left: 45vw;
+    top: 12px;
+}
+
+/* the button design*/
+.but,
+.butnn {
+    color: #FFFFFF;
+    width: 180px;
+    border: none;
+    background: none;
+    border-radius: 4px;
+    border: 1px #FFFFFF solid
+}
+
+/* the msg in the bottom of the page */
 .iconmsg {
     position: absolute;
     position: fixed;
@@ -193,34 +239,20 @@ h3 {
     height: 50px;
     border-radius: 200px;
     background-position: center;
-    /* Center the image */
     background-repeat: no-repeat;
-    /* Do not repeat the image */
     background-size: cover;
 }
 
-.right,
-.right,
-.desktop a {
-    color: #FFFFFF;
-    z-index: 1;
-}
 
-.content {
-    color: #FFFFFF;
-    position: absolute;
-    background: url(../img/Model-3-Main-Hero-Desktop-LHD.jpg)no-repeat center center/cover;
-
-    height: 100vh;
-    width: 100vw;
-}
-
+/* the model 3 in the website and the link */
 .container {
     position: absolute;
     left: 35vw;
     top: 19vh
 }
-.buttons img{
+
+/* image */
+.buttons img {
     position: absolute;
     left: 70px;
     bottom: 15px;
@@ -232,13 +264,14 @@ h3 {
     width: 32px;
     height: 30px;
 }
+
+/* for the model 3 and the link */
 .container div {
     color: #FFFFFF;
     box-sizing: border-box;
     width: 342px;
     font-size: 34px;
     font-weight: 500;
-
     line-height: 40px;
     opacity: 1;
     text-align: center;
@@ -246,11 +279,13 @@ h3 {
 
 }
 
+/* the link under model 3 */
 .container,
 .demodrive {
     color: #FFFFFF;
     font-weight: 400;
-    text-align: center;
+    margin-left: 98px;
+    /* text-align: center; */
     font-size: 14px;
     text-decoration-color: rgb(238, 238, 238);
 }
@@ -260,35 +295,31 @@ p {
     position: absolute;
 }
 
-.sec,
-.sec section {
-    height: 100px;
-    width: 100px;
-    background-color: red;
-}
 
-.containerr {
-    height: 1100px;
-    background-color: red;
-}
 
+/* the second page the photo */
 .containerr,
 .photoo {
     background: url(../img/model-3-hero-a-desktop.jpg)no-repeat center center/cover;
-
-
 }
-.photo{
+
+/* the second page the photo */
+
+.photo {
     background-position: center;
     /* Center the image */
     background-repeat: no-repeat;
     /* Do not repeat the image */
     background-size: cover;
 }
-.photo img{
+
+/* the photo in the last page */
+.photo img {
     width: 100%;
     height: 350px;
 }
+
+/* the photo in the last page */
 
 .containerr,
 img {
@@ -297,6 +328,7 @@ img {
 
 }
 
+/* the text in the second page */
 .container,
 .text,
 .p {
@@ -307,19 +339,31 @@ img {
 
 }
 
+/* the text in the second page */
+
 .container,
 .subject {
-    font-weight: 550;
-    font-size: medium;
+    /* font-weight: 550; */
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 24.038px;
+    text-transform: none;
 }
+
+/* the text in the second page */
 
 .container,
 .boldsize {
-    font-weight: bold;
-    font-size: large;
+    width: 600px;
+    color: rgb(23, 26, 32);
+    font-weight: 800;
+    font-size: 24px;
     margin: 8px 0;
+    line-height: 28px;
+
 }
 
+/* buttons */
 .buttons {
     position: absolute;
     display: flex;
@@ -330,6 +374,7 @@ img {
 
 }
 
+/* button */
 .buttons,
 button {
 
@@ -337,75 +382,95 @@ button {
     height: 30px;
     border-radius: 3px;
 }
-.buynow{
-    margin-bottom: 40px;
-    /* position: absolute; */
- 
+
+/* button in the second page */
+.buynow {
+    background: none;
+    width: 200px;
+    margin-bottom: 40px
+        /* position: absolute; */
+
 }
-.learnmore{
-    width: 50%;
-    margin-right: 40px;
- 
+
+/* learnmore text second page */
+.learnmore {
+    margin-top: 5px;
+    width: 110px;
 }
-.learnmore img{
-    margin-right: 300px;
-}
-.flexrow img{
-    height:14px;
+
+/* the plus img in the last page */
+
+.flexrow img {
+    height: 14px;
     width: 20px;
 }
-.flexrow ,.widthbtn{
-    width: 270px;
 
-    /* width: 00px; */
+/* button in the last page */
+.flexrow,
+.widthbtn {
+    width: 270px;
 }
-.buynow:hover{
+
+/* hover button in the second page */
+.buynow:hover {
     background-color: black;
     color: #FFFFFF;
+    transition: 0.7s;
 }
+
+/* the footer */
 footer {
     height: 900px;
     color: black;
 
 }
 
+/* img in the last page */
 footer img {
     width: 100%;
 }
 
+/* textt in the last page  */
 .textt {
     position: relative;
-
     width: 70%;
     margin-left: 10rem;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
+/* textt in the last page  */
+
 .lorem {
+    color: rgb(57, 60, 65);
     position: absolute;
     line-height: 1.3rem;
     right: 0;
     top: 0;
     float: right;
-    width: 50%;
+    font-size: 15px;
+    text-align: start;
+    font-weight: 400;
+    width: 60%;
+    margin-top: 20px;
 }
+
+/* textt in the last page  */
 
 .flexrow {
     display: flex;
 }
 
+/* learnmore in the last page */
 .displaya {
+    line-height: 26px;
     width: 160px;
+    margin-bottom: 40px;
 }
 
-.fa-light,
-.fa-circle-plus {
-    width: 20px;
-    height: 20px;
-}
-.tds-icon ,.tcl-icon ,.tcl-icon--round ,.tcl-showcase__drawer-open-button-svg{
+/* .tds-icon,
+.tcl-icon,
+.tcl-icon--round,
+.tcl-showcase__drawer-open-button-svg {
     color: black;
     fill: rgb(16, 14, 14);
-
-
-}
+} */
