@@ -29,6 +29,7 @@ header {
 
 /* img in the header */
 .content {
+    /* opacity: 1; */
     color: #FFFFFF;
     position: absolute;
     background: url(../img/Model-3-Main-Hero-Desktop-LHD.jpg)no-repeat center center/cover;
@@ -121,6 +122,9 @@ header {
     z-index: 1;
 }
 
+
+
+
 /* the left scrool in my website */
 .scrool {
     position: fixed;
@@ -171,6 +175,8 @@ header nav.center {
 
 /* mpg and the timer and the button  */
 .containerfour {
+
+    /* opacity: 0; */
     position: absolute;
     color: #FFFFFF;
     margin-top: 80vh;
@@ -178,6 +184,20 @@ header nav.center {
     display: flex;
     width: 45%;
 }
+
+.box1,
+.box2,
+.box3,
+.but {
+    opacity: 1;
+    transition: all 1s;
+    -webkit-transition: all 0.5s;
+}
+
+/* .box1:active,.box2:active,.box3:active{
+    opacity: 1;
+} */
+
 
 /* the margin in the box for each one */
 .box1 {
@@ -199,7 +219,7 @@ header nav.center {
     color: #FFFFFF;
     position: absolute;
     /* font-size: large; */
-    margin-top: 40vh;
+    margin-top: 51vh;
     left: 20vw;
     display: flex;
     width: 45%;
@@ -216,6 +236,8 @@ h3 {
     left: 45vw;
     top: 12px;
 }
+
+container
 
 /* the button design*/
 .but,
@@ -304,13 +326,20 @@ p {
 }
 
 /* the second page the photo */
+.containerr,
+span a {
+    color: rgb(23, 26, 32);
+}
 
 .photo {
-    background-position: center;
+    background: url(/img/Model-3-Performance-Hero-Desktop-LHD\ \(1\).jpg)no-repeat center center/cover;
+    width: 100%;
+    height: 420px;
+    /* background-position: center; */
     /* Center the image */
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     /* Do not repeat the image */
-    background-size: cover;
+    /* background-size: cover; */
 }
 
 /* the photo in the last page */
